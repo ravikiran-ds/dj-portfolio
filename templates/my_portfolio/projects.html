@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+{% extends 'my_portfolio/base.html' %}
+{% load staticfiles %}
+
+{% block body_block %}
+<div style='margin-top:2.5%'>
+<div class="card test" style="width:50%;margin-left:25%">
+<div class="card-body">
+<h5 class="card-title" id='align'>Face Detection</h5>
+<h6 class="card-subtitle mb-2 text-muted" id='align1' style='margin-top:5px'>Python &nbsp CNN &nbsp Keras &nbsp CV</h6>
+<p class="card-text" id='align1' style='margin-top:5px'>This application uses CV to capture images and find my face in it, if it is not my face it will reject.<br>
+It will only recognoise one face and rejcect others.<br>
+Using CV I collect data of my face, using CNN for recognising.</p>
+<a class="btn btn-primary" href="https://github.com/ravikiran-ds/faceRec-CNN" style='margin-top:5px' role="button">Visit Project in Github</a>
+<!--<a class="btn btn-success" href="/" role="button">View Deployed</a>-->
+</div>
+</div>
+</div>
+
+
+<div style='margin-top:2.5%'>
+<div class="card test" style="width:50%;margin-left:25%">
+<div class="card-body">
+<h5 class="card-title" id='align'>Hate Speech Recognition</h5>
+<h6 class="card-subtitle mb-2 text-muted" id='align1' style='margin-top:5px'>Python &nbsp Natural Language Processing &nbsp ANN</h6>
+<p class="card-text" id='align1' style='margin-top:5px'>I used the Twitter hate speech dataset to train the ANN model.<br>
+This applciaiton can also work as personal assiatant for opening webites and searching terms.</p>
+<a class="btn btn-primary" href="https://github.com/ravikiran-ds/assistant-and-hate-speech-recog" style='margin-top:5px' role="button">Visit Project in Github</a>
+<!--<a class="btn btn-success" href="/" role="button">View Deployed</a>-->
+</div>
+</div>
+</div>
+
+<div style='margin-top:2.5%;margin-bottom:5%'>
+<div class="card test" style="width:50%;margin-left:25%">
+<div class="card-body">
+<h5 class="card-title" id='align'>OLX Apartments</h5>
+<h6 class="card-subtitle mb-2 text-muted" id='align1' style='margin-top:5px'>Python &nbsp EDA</h6>
+<p class="card-text" id='align1' style='margin-top:5px'>This is a exploratory data analysis of the apartmemts on the OLX website.<br>
+Finding the best types of Apartments, average cost and many other things.</p>
+<a class="btn btn-primary" href="https://github.com/ravikiran-ds/olx-apartments" style='margin-top:5px' role="button">Visit Project in Github</a>
+</div>
+</div>
+</div>
+
+
+
+{% endblock %}

@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+{% extends 'my_portfolio/base.html' %}
+{% load staticfiles %}
+
+{% block body_block %}
+<div class='container' style='margin-left:39%;margin-top:10%'>
+  <div class='form-group'>
+<h1>To Contact</h1>
+<h7>On successful submission You will be redirected to home.</h7>
+<br>
+<br>
+<form method='POST'>
+  {{form.as_p}}
+  {% csrf_token %}
+  <input type="submit" value="submit" class="btn btn-primary">
+</form>
+</div>
+</div>
+{% endblock %}

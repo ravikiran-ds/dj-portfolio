@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+{% load staticfiles %}
+<html lang="en" dir="ltr">
+  <head>
+    <link rel="stylesheet" href="{% static 'css/base.css'%}">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body style='background-color:#f7e5d8'>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light" id='nav1'>
+ <a class="navbar-brand" href="{% url 'my_portfolio:index'  %}">Ravi Kiran</a>
+ <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+   <span class="navbar-toggler-icon"></span>
+ </button>
+
+ <div class="collapse navbar-collapse" id="navbarSupportedContent">
+   <ul class="navbar-nav mr-auto">
+     <li class="nav-item active">
+       <a class="nav-link" href="{% url 'my_portfolio:projects'  %}">Projects<span class="sr-only">(current)</span></a>
+     </li>
+     <li class="nav-item">
+       <a class="nav-link" href="https://drive.google.com/file/d/1bh18FmCcd5vwGyiYP0o1QNW76YBpsfiE/view?usp=sharing">Resume</a>
+     </li>
+     <li class="nav-item">
+       <a class="nav-link" href="{% url 'my_portfolio:info'  %}">Contact Me</a>
+     </li>
+   </ul>
+</nav>
+
+{% block body_block %}
+
+{% endblock %}
+  </body>
+</html>
