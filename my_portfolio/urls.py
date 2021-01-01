@@ -7,5 +7,4 @@ urlpatterns=[
     url(r'^$',views.index,name='index'),
     url(r'^projects',views.projects,name='projects'),
     url(r'^info',views.info,name='info'),
-    url(r'^msg',views.messages.as_view(),name='msgs')
     ]
